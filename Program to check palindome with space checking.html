@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Palindome with space checking</title>
+</head>
+<body>
+<script type="text/javascript">
+	function ifWordHasSpace(wordSpace) {
+let spacelessWord = wordSpace.toLowerCase();
+if (wordSpace.includes(' ')) {
+spacelessWord = wordSpace.replace(' ','');
+console.log(isWordAPalindrome(spacelessWord));
+
+} else {
+console.log(isWordAPalindrome(spacelessWord));
+}
+
+}
+function isWordAPalindrome(word) {
+let reversedWord = word.split('').reverse().join('');
+if (reversedWord == word) {
+return 'true'
+} else {
+return 'false'
+}
+}
+ifWordHasSpace('nurses run')
+</script>
+</body>
+</html>

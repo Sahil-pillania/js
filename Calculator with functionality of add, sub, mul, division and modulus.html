@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Calculator using arithmetic functions.</title>
+</head>
+<body>
+<input type="number" id="first" /><br>
+<input type="number" id="second" /><br>
+       <button onclick="sum()">Sum</button>
+       <button onclick="sub()">Subtract</button>
+       <button onclick="mul()">Multiply</button>
+       <button onclick="div()">Divide</button>
+       <button onclick="Modulus()">Modulus</button>
+<p id="result"></p>
+<script>
+function sum()
+{
+var first = parseInt(document.getElementById("first").value);
+var second =parseInt(document.getElementById("second").value);
+var third= first+second; 
+document.getElementById("result").innerHTML=third;                //for output on screen
+console.log(third);                                               //for output in console
+}
+function sub()
+{
+var first = parseInt(document.getElementById("first").value);
+var second =parseInt(document.getElementById("second").value);
+var third= first-second; 
+document.getElementById("result").innerHTML=third;
+console.log(third);
+}
+function mul()
+{
+var first = parseInt(document.getElementById("first").value);
+var second =parseInt(document.getElementById("second").value);
+var third= first*second; 
+document.getElementById("result").innerHTML=third;
+console.log(third);
+}
+function div()
+{
+var first = parseInt(document.getElementById("first").value);
+var second =parseInt(document.getElementById("second").value);
+var third= first/second; 
+document.getElementById("result").innerHTML=third;
+console.log(third);
+}
+function Modulus()
+{
+var first = parseInt(document.getElementById("first").value);
+var second =parseInt(document.getElementById("second").value);
+var third= first%second; 
+document.getElementById("result").innerHTML=third;                //for output on screen
+console.log(third);
+ }
+</script>
+</body>
+</html>

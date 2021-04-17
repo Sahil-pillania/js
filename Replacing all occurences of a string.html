@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Replacing all occurences of a string</title>
+</head>
+<body>
+	<p><h3>Output will be shown in console.</h3></p>
+<script type="text/javascript">
+	const text = "Java is awesome. Java is fun."
+
+// notice the g switch in the regex pattern
+const pattern = /Java/g;
+
+const new_text = text.replace(pattern, "JavaScript");
+console.log(new_text);
+</script>
+</body>
+</html>
