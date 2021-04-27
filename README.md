@@ -1,2 +1,2 @@
 # js
-javascript programs.
+Some standard javascript programs using javascript in HTML. 
